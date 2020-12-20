@@ -12,3 +12,4 @@ MAP_SET:
 
 MAP_SET_END
   include "data/heroes.asm"
+ 
