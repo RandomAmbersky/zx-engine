@@ -1,0 +1,16 @@
+# file opened: /Users/random/zx-engine/make_sna.asm
+1     0000              include "defines.asm"
+# file opened: /Users/random/zx-engine/defines.asm
+1+    0000              DEVICE zxspectrum48
+2+    0000              PROG_ADDR equ #6000 ; уся память в наших руках c собственным IM 2!!!
+3+    0000
+# file closed: /Users/random/zx-engine/defines.asm
+2     0000              ORG PROG_ADDR
+3     6000
+4     6000              incbin "output/static.bin"
+5     D013              incbin "output/dynamic.bin"
+6     DA0A              incbin "output/dynamic.bin.zx7"
+7     DC23
+8     DC23              SAVESNA "cell3326.sna",PROG_ADDR
+9     DC23
+# file closed: /Users/random/zx-engine/make_sna.asm

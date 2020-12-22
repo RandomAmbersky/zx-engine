@@ -101,6 +101,7 @@
             "command": "python3 ${workspaceFolder}/engine/bin/cross-platform/png2scr.py -i ${workspaceFolder}/data/tiles/tiles_many.png -o ${workspaceFolder}/output/tiles.scr",
             "problemMatcher": [],
         },
+
         // {
         //     "type": "shell",
         //     "label": "sjasmplus_one", // склеиваем все parts (static.bin и dynamic.bin и dynamic.bin.zx7 ) в один бинарь
