@@ -272,7 +272,7 @@ lookCharSeeCellInfo:
   CALL calc_cell_type
   LD (lookCharSeeCellInfo_p+1), HL
 lookCharSeeCellInfo_p:
-  LD HL, (#0000)
+  LD HL, (#FFFF)
   CALL screenfx.show_info_message
   RET
 

@@ -46,14 +46,14 @@
                 ],
             },
             "dependsOn": [
-                "sjasmplus_parts"
+                "zx7"
             ],
             "problemMatcher": "$errmatcher-sjasmplus",
         },        
         {
             "type": "shell",
             "label": "run_sna",
-            "command": "open -a 'Fuse' cell3326.sna",
+            "command": "open -a 'Fuse' ${workspaceFolder}/output/cell3326.sna",
             // "command": "open -a 'Unreal Speccy Portable' cell3326.sna",
             "dependsOn": [
                 "make_sna"
@@ -86,7 +86,17 @@
                     "--fullpath",
                     "${workspaceFolder}/parts.asm"
                 ],
-            },            "problemMatcher": "$errmatcher-sjasmplus",
+            },            
+            "problemMatcher": "$errmatcher-sjasmplus",
+        },
+        {
+            "type": "shell",
+            "label": "zx7",
+            "command": "rm -f ${workspaceFolder}/output/*.zx7; ${workspaceFolder}/engine/bin/osx/zx7 ${workspaceFolder}/output/static.bin; ${workspaceFolder}/engine/bin/osx/zx7 ${workspaceFolder}/output/dynamic.bin",
+            "dependsOn": [
+                "sjasmplus_parts"
+            ],
+            "problemMatcher": []
         },
         // {
         //     "type": "shell",
@@ -103,15 +113,6 @@
         //     "command": "open -a 'Unreal Speccy Portable' cell3326.trd --args -m 0 ",
         //     "dependsOn": [
         //         "make_trd"
-        //     ],
-        //     "problemMatcher": []
-        // },
-        // {
-        //     "type": "shell",
-        //     "label": "zx7",
-        //     "command": "rm -f *.zx7; ./bin/zx7 static.bin; ./bin/zx7 dynamic.bin",
-        //     "dependsOn": [
-        //         "sjasmplus_parts"
         //     ],
         //     "problemMatcher": []
         // },
