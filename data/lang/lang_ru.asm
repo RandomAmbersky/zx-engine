@@ -301,7 +301,7 @@ Wall_cell_name: db "“€жела€ бронеплита",0
 ; Ballon_cell_name: db "Ѕаллон",0
 Bed_cell_name: db " ровать",0
 Trash_cell_name: db "ћелкие обломки и мусор",0
-
+Trash_name: db "ћусор", 0
 Soft_wall_name: db "ћ€гка€ декоративна€ стена",0
 
 Shard_item_name: db "ќстрый пластиковый обломок",0

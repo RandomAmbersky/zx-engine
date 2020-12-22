@@ -25,6 +25,11 @@ Floor_8.spr: equ 8
     SETUP_CELL_TYPE_N Floor_cell_name, Floor.script
   ENDMODULE
 
+Floor_21.spr: equ 21
+  MODULE Floor_21
+    SETUP_CELL_TYPE_N Floor_cell_name, Floor.script
+  ENDMODULE
+
 Floor_22.spr: equ 22
   MODULE Floor_22
     SETUP_CELL_TYPE_N Floor_cell_name, Floor.script

@@ -1,4 +1,4 @@
-SoftWall.spr: equ #06
+SoftWall.spr: equ 6
 
   MODULE SoftWall
 
@@ -29,4 +29,9 @@ soft_wall_break
   ShowText Shard_to_soft_wall_mess
   goto no_way_script
 
+  ENDMODULE
+
+SoftWall_88.spr: equ 88
+  MODULE SoftWall_88
+    SETUP_CELL_TYPE_N Bush_cell_name, Bush.script
   ENDMODULE

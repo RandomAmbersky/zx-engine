@@ -1,18 +1,23 @@
 
 ; --- трава 
 
-Grass.spr: equ #11
+Grass.spr: equ 17
   MODULE Grass
     SETUP_CELL_TYPE_N Grass_cell_name, Floor.script
   ENDMODULE
 
-Grass2.spr: equ #20
+Grass2.spr: equ 32
   MODULE Grass2
     SETUP_CELL_TYPE_N Grass_cell_name, Floor.script
   ENDMODULE
 
-Grass3.spr: equ #10
+Grass3.spr: equ 16
   MODULE Grass3
+    SETUP_CELL_TYPE_N Grass_cell_name, Floor.script
+  ENDMODULE
+
+Grass_158.spr: equ 158
+  MODULE Grass_158
     SETUP_CELL_TYPE_N Grass_cell_name, Floor.script
   ENDMODULE
 
@@ -84,4 +89,34 @@ script:
   ; shiruFX FX_Wall
   ShowText Keramit_nohit_mess
   goto no_way_script
+  ENDMODULE
+
+Keramit_154.spr: equ 154
+  MODULE Keramit_154
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_156.spr: equ 156
+  MODULE Keramit_156
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_170.spr: equ 170
+  MODULE Keramit_170
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_185.spr: equ 185
+  MODULE Keramit_185
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_186.spr: equ 186
+  MODULE Keramit_186
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_189.spr: equ 189
+  MODULE Keramit_189
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
   ENDMODULE
