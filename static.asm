@@ -5,7 +5,7 @@ IS_GAME_OVER
   defb 00
 
 TILE_SET:
-  include "data/graph/tiles_many.asm"
+  INCBIN "./output/tiles.bin"
 TILE_SET_END
 
 LANG_SET:
