@@ -27,7 +27,7 @@ Floor_8.spr: equ 8
 
 Floor_21.spr: equ 21
   MODULE Floor_21
-    SETUP_CELL_TYPE_N Floor_cell_name, Floor.script
+    SETUP_CELL_TYPE_N Trash_name, Floor.script
   ENDMODULE
 
 Floor_22.spr: equ 22
