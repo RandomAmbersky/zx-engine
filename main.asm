@@ -10,15 +10,17 @@ pack_dynamic:
 
 _all_end:
 
-display /D, _all_end-code, " size, ", /D, INT_VECTOR-_all_end, " free"
+; display /D, _all_end-code, " size, ", /D, INT_VECTOR-_all_end, " free"
 
-display "----- code start: ", code
-display "engine size: ", /D, static-code, ", code end: ", static
-display "static data size: ", /D, dynamic-static, ", static end: ", dynamic
-display "font addr: ", p68_font, ", pre-font unused size: ", /D, p68_font - LANG_SET_END
-display "dynamic data size: ", /D, _all_end-dynamic, ", dynamic end: ", _all_end
-display "interrupt:  ", INT_VECTOR, " ", INT_VECTOR+256
-display "----- all end: ", _all_end
+display '-----------------------------------------'
+display 'Engine:   ', code, '-', static-1, ',size: ', /D, static-code
+display 'Static:   ', static, '-', dynamic-1,', size: ', /D, dynamic-static
+display 'Dynamic:  ', dynamic, '-', _all_end-1, ', size: ', /D, _all_end-dynamic
+display '-----------------------------------------'
+display "interrupt: ", INT_VECTOR, "-", INT_VECTOR+256-1
+display '-----------------------------------------'
+; display "dynamic data size: ", /D, _all_end-dynamic, ", dynamic end: ", _all_end
+; display "----- all end: ", _all_end
 
 ; display binary_calc_hero_cursor_pos
 ; display CELL_TYPES
