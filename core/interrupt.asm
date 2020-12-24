@@ -2,6 +2,17 @@
 
 init: ;инициализация прерываний, из Survivesection
   DI
+  ; LD HL, INT_VECTOR ;Строим таблицу.
+  ; LD DE, INT_VECTOR+1
+  ; LD BC, #0100
+  ; LD (HL), INT_VECTOR_high+1
+  ; LD A, H
+  ; LDIR
+  ; LD I, A
+  ; LD A, #C3
+  ; LD HL, interrupt_routine
+  ; LD (INT_VECTOR_high_1 + INT_VECTOR_high_1 * 255), A
+  ; LD (INT_VECTOR_high_1 + INT_VECTOR_high_1 * 255 + 1), HL
   LD HL,INT_VECTOR
   LD B,0
   LD A, (high INT_VECTOR)+1

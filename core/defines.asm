@@ -2,6 +2,8 @@
 ; никаких данных только дефайны и макросы!
 
 INT_VECTOR equ #E000
+INT_VECTOR_high equ high INT_VECTOR
+INT_VECTOR_high_1 equ INT_VECTOR_high + 1
 
 PEN_BLACK     equ %000
 PEN_BLUE      equ %001
