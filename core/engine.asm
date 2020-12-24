@@ -105,7 +105,8 @@ init:
 
   LD HL,pack_dynamic
   LD DE, dynamic
-  CALL dzx7_standard
+  CALL Apultra.unpack
+  ; CALL dzx7_standard
 
   CALL clearVars
 
@@ -130,7 +131,8 @@ process_goto:
 clear_data:
   LD HL,pack_dynamic
   LD DE, dynamic
-  CALL dzx7_standard
+  CALL Apultra.unpack
+  ; CALL dzx7_standard
   CALL clearVars
   RET
 

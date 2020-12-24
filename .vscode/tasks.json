@@ -41,14 +41,23 @@
                 ],
             },
             "dependsOn": [
-                "zx7"
+                "pack"
             ],
             "problemMatcher": "$errmatcher-sjasmplus",
         },
+        // {
+        //     "type": "shell",
+        //     "label": "zx7",
+        //     "command": "rm -f ${workspaceFolder}/output/*.zx7; ${workspaceFolder}/engine/bin/osx/zx7 ${workspaceFolder}/output/static.bin; ${workspaceFolder}/engine/bin/osx/zx7 ${workspaceFolder}/output/dynamic.bin",
+        //     "dependsOn": [
+        //         "sjasmplus_parts"
+        //     ],
+        //     "problemMatcher": []
+        // },
         {
             "type": "shell",
-            "label": "zx7",
-            "command": "rm -f ${workspaceFolder}/output/*.zx7; ${workspaceFolder}/engine/bin/osx/zx7 ${workspaceFolder}/output/static.bin; ${workspaceFolder}/engine/bin/osx/zx7 ${workspaceFolder}/output/dynamic.bin",
+            "label": "pack",
+            "command": "rm -f ${workspaceFolder}/output/*.ap; ${workspaceFolder}/engine/bin/osx/apultra ${workspaceFolder}/output/static.bin ${workspaceFolder}/output/static.bin.ap; ${workspaceFolder}/engine/bin/osx/apultra ${workspaceFolder}/output/dynamic.bin ${workspaceFolder}/output/dynamic.bin.ap",
             "dependsOn": [
                 "sjasmplus_parts"
             ],

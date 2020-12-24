@@ -14,7 +14,13 @@
   include "core/routines/tiles16.asm"
   include "core/routines/view.asm"
   include "core/routines/input.asm"
-  include "core/routines/zx7.a80"
+  ; include "core/routines/zx7.a80"
+  
+  MODULE Apultra
+unpack:
+    include "engine/lib/unpackers/apultra/unaplib_small.asm"
+  ENDMODULE    
+  
   include "middlware/beeper.asm"
   include "middlware/screenfx.asm"
   include "middlware/text.asm"
