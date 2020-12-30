@@ -6,7 +6,7 @@
         {
             "type": "shell",
             "label": "run_sna",
-            "command": "${workspaceFolder}/engine/bin/osx/xpeccy.app/Contents/MacOS/xpeccy ${workspaceFolder}/output/cell3326.sna",
+            "command": "${workspaceFolder}/engine/bin/osx/xpeccy.app/Contents/MacOS/xpeccy -l ${workspaceFolder}/output/labels.txt ${workspaceFolder}/output/cell3326.sna",
             // "command": "open -a 'Fuse' ${workspaceFolder}/output/cell3326.sna",
             // "command": "open -a 'Unreal Speccy Portable' cell3326.sna",
             "dependsOn": [
