@@ -15,14 +15,6 @@ DYNAMIC_BIN_PACK:
 incbin "output/dynamic.bin.ap"
 DYNAMIC_BIN_PACK_END:
 
-; DYNAMIC_BIN_EXO:
-; incbin "output/dynamic.bin.ap"
-; DYNAMIC_BIN_EXO_END:
-
-; STATIC_BIN_ZX7:
-; incbin "output/static.bin.zx7"
-; STATIC_BIN_ZX7_END:
-
 SAVESNA "cell3326.sna",PROG_ADDR
 
 display '-------- Snapshot ---------------------------------'
