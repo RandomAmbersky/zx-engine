@@ -22,6 +22,7 @@
                     "--dos866",
                     "--nofakes",
                     "--dirbol",
+                    "--sym=${workspaceFolder}/output/labels",
                     "--outprefix=${workspaceFolder}/output/",
                     "--lst=${workspaceFolder}/output/program.list",
                     "--fullpath",
@@ -34,6 +35,7 @@
                     "--dos866",
                     "--nofakes",
                     "--dirbol",
+                    "--sym=${workspaceFolder}/output/labels",
                     "--outprefix=${workspaceFolder}/output/",
                     "--lst=${workspaceFolder}/output/program.list",
                     "--fullpath",
@@ -57,12 +59,21 @@
         {
             "type": "shell",
             "label": "pack",
-            "command": "rm -f ${workspaceFolder}/output/*.ap; ${workspaceFolder}/engine/bin/osx/apultra ${workspaceFolder}/output/static.bin ${workspaceFolder}/output/static.bin.ap; ${workspaceFolder}/engine/bin/osx/apultra ${workspaceFolder}/output/dynamic.bin ${workspaceFolder}/output/dynamic.bin.ap",
+            "command": "rm ${workspaceFolder}/output/*.ap; ${workspaceFolder}/engine/bin/osx/apultra ${workspaceFolder}/output/static.bin ${workspaceFolder}/output/static.bin.ap; ${workspaceFolder}/engine/bin/osx/apultra ${workspaceFolder}/output/dynamic.bin ${workspaceFolder}/output/dynamic.bin.ap",
             "dependsOn": [
                 "sjasmplus_parts"
             ],
             "problemMatcher": []
         },
+        // {
+        //     "type": "shell",
+        //     "label": "pack",
+        //     "command": "rm ${workspaceFolder}/output/*.shr; ${workspaceFolder}/engine/bin/osx/Shrinkler -d ${workspaceFolder}/output/static.bin ${workspaceFolder}/output/static.bin.shr; ${workspaceFolder}/engine/bin/osx/Shrinkler -d ${workspaceFolder}/output/dynamic.bin ${workspaceFolder}/output/dynamic.bin.shr",
+        //     "dependsOn": [
+        //         "sjasmplus_parts"
+        //     ],
+        //     "problemMatcher": []
+        // },
         {
             "type": "shell",
             "label": "sjasmplus_parts", // делаем static.bin и dynamic.bin
@@ -110,13 +121,13 @@
             "command": "python3 ${workspaceFolder}/engine/bin/cross-platform/png2scr.py -i ${workspaceFolder}/data/tiles/tiles.png -o ${workspaceFolder}/output/tiles.scr",
             "problemMatcher": [],
             "dependsOn": [
-                "clean_dir"
+                // "clean_dir"
             ],
         },
         {
             "type": "shell",
             "label": "clean_dir",
-            "command": "rm -f ${workspaceFolder}/output/*.*",
+            "command": "mkfile ${workspaceFolder}/output/stpfile;rm ${workspaceFolder}/output/*",
             "problemMatcher": []
         },
         // {

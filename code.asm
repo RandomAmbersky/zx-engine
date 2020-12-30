@@ -21,6 +21,11 @@ unpack:
     include "engine/lib/unpackers/apultra/unaplib_small.asm"
   ENDMODULE    
   
+  ; MODULE Shrinkler
+; unpack:
+    ; include "engine/lib/unpackers/shrinkler/shrinkler_recall_209.asm"
+  ; ENDMODULE
+
   include "middlware/beeper.asm"
   include "middlware/screenfx.asm"
   include "middlware/text.asm"

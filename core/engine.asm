@@ -103,12 +103,7 @@ my_stack_end:
 init:
   DI
 
-  LD HL,pack_dynamic
-  LD DE, dynamic
-  CALL Apultra.unpack
-  ; CALL dzx7_standard
-
-  CALL clearVars
+  CALL clear_data
 
   LD SP, my_stack_end
   CALL interrupt.init
@@ -133,6 +128,12 @@ clear_data:
   LD DE, dynamic
   CALL Apultra.unpack
   ; CALL dzx7_standard
+
+  ; LD IX, pack_dynamic
+  ; LD HL, #4000
+  ; LD DE, dynamic
+  ; CALL Shrinkler.unpack
+
   CALL clearVars
   RET
 
