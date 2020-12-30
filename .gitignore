@@ -1,4 +1,5 @@
-mylabels.txt
+labels.txt
+labelsequ.txt
 *.sna
 *.trd
 *.tap

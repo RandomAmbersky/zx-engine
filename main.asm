@@ -26,7 +26,7 @@ display '-----------------------------------------'
 ; display CELL_TYPES
 ; display Computer_cell_name
 ; display ComputerBreak.computer_break_script
-; LABELSLIST "mylabels.txt"
+LABELSLIST "labels.txt"
 
   ; прикрепляем к engine скрипты и определения
   ; SAVEBIN "static.bin", code, dynamic-code
