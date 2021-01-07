@@ -14,16 +14,49 @@ drop_:
   IfVar Vars.var_item_id, Shard.spr, base_kick_shard_fault
   goto base_kick_fault
 
-; get_:
-  ; shiruFX FX_Wall
-  ; CallScript action_ring_explode
-  ; ShowText Wall_mess
-  ; goto no_way_script
+  ENDMODULE
 
-; break_shard:
-;   shiruFX 21
-;   ; CallCode items.del_item_from_hand
-;   ; ShowText Break_shard_mess
-;   goto no_way_script
+Wall_75.spr: equ 75
+  MODULE Wall_75
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
 
+Wall_76.spr: equ 76
+  MODULE Wall_76
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_78.spr: equ 78
+  MODULE Wall_78
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_79.spr: equ 79
+  MODULE Wall_79
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_95.spr: equ 95
+  MODULE Wall_95
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_111.spr: equ 111
+  MODULE Wall_111
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_123.spr: equ 123
+  MODULE Wall_123
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_124.spr: equ 124
+  MODULE Wall_124
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
+  ENDMODULE
+
+Wall_127.spr: equ 127
+  MODULE Wall_127
+    SETUP_CELL_TYPE_N Wall_cell_name, Wall.script
   ENDMODULE
