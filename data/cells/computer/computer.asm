@@ -1,5 +1,5 @@
 
-Computer.spr equ #04
+Computer.spr: equ #04
 
   MODULE Computer
 

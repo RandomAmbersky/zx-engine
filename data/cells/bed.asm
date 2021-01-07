@@ -1,5 +1,5 @@
 
-Bed.spr equ 19
+Bed.spr: equ 19
 
   MODULE Bed
 

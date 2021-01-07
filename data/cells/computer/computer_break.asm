@@ -1,5 +1,5 @@
 
-ComputerBreak.spr equ #24
+ComputerBreak.spr: equ #24
 
   MODULE ComputerBreak
 

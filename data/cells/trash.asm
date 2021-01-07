@@ -1,5 +1,5 @@
 
-Trash.spr equ #32
+Trash.spr: equ #32
 
   MODULE Trash
   SETUP_CELL_TYPE_N Trash_cell_name,  trash_script

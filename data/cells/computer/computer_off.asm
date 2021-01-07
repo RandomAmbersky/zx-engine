@@ -1,5 +1,5 @@
 
-ComputerOff.spr equ #14
+ComputerOff.spr: equ #14
 
   MODULE ComputerOff
 

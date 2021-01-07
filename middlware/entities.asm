@@ -354,36 +354,39 @@ char_do:
   RET NC;  возвратили false - неправильное направление или действие
 ; Vars.MapCell_xy - позиция, MapCell_ptr - указатель на ячейку
 
+  ; TODO removed
+  JP char_do_stand
+
 ; подготавливаем переменные для обработки в скриптах
-  ; CALL items.get_hero_hand_item; устанавливаем в Vars.var_item_id id предмета
+  CALL items.get_hero_hand_item; устанавливаем в Vars.var_item_id id предмета
 
 ; проверяем поднимаем мы или бросаем
-  ; getVar Vars.var_act
-  ; CP do_get_drop
-  ; JP NZ, char_do_2; если это не поднятие/бросание то переходим на 2ю фазу
+  getVar Vars.var_act
+  CP do_get_drop
+  JP NZ, char_do_2; если это не поднятие/бросание то переходим на 2ю фазу
 
 ; начинаем высчитывать что это - поднятие или бросание...
 ; есть ли предмет в руках?
-  ; getVar Vars.var_item_id
-  ; CP #FF
-  ; JR Z, no_item_in_hand
+  getVar Vars.var_item_id
+  CP #FF
+  JR Z, no_item_in_hand
 
-; yes_item_in_hand: ; предмет в руках есть - значить бросаем его!
-  ; LD A, do_drop
-  ; setVar Vars.var_act
-  ; JR char_do_2
+yes_item_in_hand: ; предмет в руках есть - значить бросаем его!
+  LD A, do_drop
+  setVar Vars.var_act
+  JR char_do_2
 
-; no_item_in_hand: ; предмета в руках нет - значить поднимаем !
-  ; LD A, do_get
-  ; setVar Vars.var_act
+no_item_in_hand: ; предмета в руках нет - значить поднимаем !
+  LD A, do_get
+  setVar Vars.var_act
 
 char_do_2:
   LD HL, (MapCell_ptr)
   LD A, (HL)
-  ; CALL call_cell_script
-  ; getVar Vars.var_ret
-  ; OR A
-  ; RET Z; после скрипта переменная установлена в 0 - значит все обработано, по дефолту обрабатывать не нужно
+  CALL call_cell_script
+  getVar Vars.var_ret
+  OR A
+  RET Z; после скрипта переменная установлена в 0 - значит все обработано, по дефолту обрабатывать не нужно
 
 ; -- дефолтная обработка - если хотим встать - становимся,
 ; -- если хотим бросить - бросаем, если хотим поднять - поднимаем!
