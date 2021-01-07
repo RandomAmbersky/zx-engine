@@ -1,6 +1,5 @@
 
 Door.spr: equ 2
-Door_half_open: equ #12
 
   MODULE Door
 

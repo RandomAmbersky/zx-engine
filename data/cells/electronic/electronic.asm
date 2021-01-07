@@ -29,8 +29,6 @@ electronic_script_off:
   FxActionCell ElectronicBreak.spr; обновляем сразу спрайт на экране
   CallCode binary_set_active_cell_left
   shiruFX 43
-  FxActionCell Door_half_open
-  wait_halt 3
   SetMapCell DoorOpen.spr
   goto no_way_script
 
