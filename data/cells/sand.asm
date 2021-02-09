@@ -33,3 +33,9 @@ happy_end_game:
 
 
   ENDMODULE
+
+
+Sand_112.spr: equ 112
+  MODULE Sand_112
+    SETUP_CELL_TYPE_N Sand_cell_name, Sand.script
+    ENDMODULE

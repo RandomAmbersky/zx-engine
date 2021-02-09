@@ -21,6 +21,11 @@ Grass_158.spr: equ 158
     SETUP_CELL_TYPE_N Grass_cell_name, Floor.script
   ENDMODULE
 
+Grass_174.spr: equ 174
+  MODULE Grass_174
+    SETUP_CELL_TYPE_N Grass_cell_name, Floor.script
+  ENDMODULE
+
 ; --- кустарник 
 Bush.spr: equ 49
   MODULE Bush
@@ -91,8 +96,23 @@ script:
   goto no_way_script
   ENDMODULE
 
+Keramit_138.spr: equ 138
+  MODULE Keramit_138
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_142.spr: equ 142
+  MODULE Keramit_142
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
 Keramit_154.spr: equ 154
   MODULE Keramit_154
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_155.spr: equ 155
+  MODULE Keramit_155
     SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
   ENDMODULE
 
@@ -101,8 +121,33 @@ Keramit_156.spr: equ 156
     SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
   ENDMODULE
 
+Keramit_157.spr: equ 157
+  MODULE Keramit_157
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
 Keramit_170.spr: equ 170
   MODULE Keramit_170
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_171.spr: equ 171
+  MODULE Keramit_171
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_172.spr: equ 172
+  MODULE Keramit_172
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_173.spr: equ 173
+  MODULE Keramit_173
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_175.spr: equ 175
+  MODULE Keramit_175
     SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
   ENDMODULE
 
@@ -113,6 +158,11 @@ Keramit_185.spr: equ 185
 
 Keramit_186.spr: equ 186
   MODULE Keramit_186
+    SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
+  ENDMODULE
+
+Keramit_188.spr: equ 188
+  MODULE Keramit_188
     SETUP_CELL_TYPE_N Keramit_cell_name, Keramit.script
   ENDMODULE
 

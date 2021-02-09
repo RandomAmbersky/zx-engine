@@ -74,8 +74,12 @@ soft_wall_panel_table:
   ENDMODULE
 
 WallHole.spr: equ 72
-
   MODULE WallHole
+    SETUP_CELL_TYPE_N WallHole_name, Floor.script
+  ENDMODULE
+
+WallHole_140.spr: equ 140
+  MODULE WallHole_140
     SETUP_CELL_TYPE_N WallHole_name, Floor.script
   ENDMODULE
 

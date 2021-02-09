@@ -33,5 +33,5 @@ soft_wall_break
 
 SoftWall_88.spr: equ 88
   MODULE SoftWall_88
-    SETUP_CELL_TYPE_N Bush_cell_name, Bush.script
+    SETUP_CELL_TYPE_N Soft_wall_name, SoftWall.soft_wall_script
   ENDMODULE
