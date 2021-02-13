@@ -2,8 +2,6 @@ import argparse
 import sys
 
 
-
-
 def createparser():
     myparser = argparse.ArgumentParser()
     myparser.add_argument('-i', '--input', type=str)
