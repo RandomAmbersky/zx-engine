@@ -13,7 +13,6 @@ def error(message):
     print(message, file=sys.stderr)
     exit(1)
 
-
 def main():
     parser = createparser()
     namespace = parser.parse_args(sys.argv[1:])
