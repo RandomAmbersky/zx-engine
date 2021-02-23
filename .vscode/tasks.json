@@ -119,7 +119,7 @@
         {
             "type": "shell",
             "label": "make_map",
-            "command": "python3 ${workspaceFolder}/engine/bin/cross-platform/tiled2asm.py -i ${workspaceFolder}/data/map/cell.tmx -o ${workspaceFolder}/output/tiles.scr",
+            "command": "python3 ${workspaceFolder}/engine/bin/cross-platform/tiled2asm.py -i ${workspaceFolder}/data/map/cell.tmx -o ${workspaceFolder}/output/map.asm",
             "problemMatcher": [],
             "dependsOn": [
                 // "clean_dir"
