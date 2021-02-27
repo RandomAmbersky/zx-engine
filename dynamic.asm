@@ -12,8 +12,8 @@ MAP_SET:
   ; include "data/maps/laboratory_demo.asm"
   ; include "data/maps/laboratory3.asm"
   ; include "data/maps/test_lab.asm"
-  include "data/map/cells.asm"
-  ; include "output/map.asm"
+  ; include "data/map/cells.asm"
+  include "output/map.asm"
 MAP_SET_END:
 
 HEROES_SET:
