@@ -24,12 +24,6 @@ def getCells (str_cells):
     cells = str_cells.strip().split('\n')
     return cells
 
-# def convertCellsToString (str_cells):
-#     in_cells = str_cells[0:-1].strip().split(',')
-#     ints = [int(s)-1 for s in in_cells]
-#     out_cells = str(',').join([str(s) for s in ints])
-#     return out_cells
-
 def convertCellsToBytes (str_cells):
     in_cells = str_cells[0:-1].strip().split(',')
     ints = [int(s)-1 for s in in_cells]
@@ -42,12 +36,6 @@ def main():
     xml_level = parse(namespace.input)
     cells_data = getLayerData(xml_level)
     cells = getCells(cells_data)
-
-    # with open(namespace.output, "w") as fh:
-    #     for cell in cells:
-    #         conv_cells = convertCells(cell)
-    #         out = ' defb ' + conv_cells + '\n'
-    #         fh.write(out)
 
     with open(namespace.output, "wb") as fh:
         for cell in cells:
