@@ -1,3 +1,7 @@
+# Hardcode exporter from TIled map first layer data to defb asm
+# example:
+# python3 tiled2asm.py -i map.tmx -o map.asm
+
 import argparse
 import sys
 
@@ -12,11 +16,6 @@ def createparser():
 def error(message):
     print(message, file=sys.stderr)
     exit(1)
-
-# def getText(nodelist):
-    # rc = []
-    # for node in nodelist:
-        # print(node.data)
 
 def main():
     parser = createparser()
