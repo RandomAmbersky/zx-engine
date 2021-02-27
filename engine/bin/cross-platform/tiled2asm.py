@@ -36,8 +36,5 @@ def main():
             out = ' defb '+cell[0:-1] + '\n'
             fh.write(out)
 
-# namespace.input
-# namespace.output
-
 if __name__ == '__main__':
     main()
