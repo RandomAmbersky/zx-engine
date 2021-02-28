@@ -25,9 +25,15 @@ def getCells (str_cells):
     return cells
 
 def convertCellsToBytes (str_cells):
-    in_cells = str_cells[0:-1].strip().split(',')
+    if (str_cells[-1] == ','):
+        str_cells = str_cells[0:-1]
+    in_cells = str_cells.strip().split(',')
     ints = [int(s)-1 for s in in_cells]
-    out_bin = bytearray(ints)
+    print(ints)
+    some_bytes = bytearray(ints)
+    out_bin = bytes(some_bytes) 
+    print(out_bin)
+    print('-----')
     return out_bin
 
 def main():
