@@ -29,11 +29,8 @@ def convertCellsToBytes (str_cells):
         str_cells = str_cells[0:-1]
     in_cells = str_cells.strip().split(',')
     ints = [int(s)-1 for s in in_cells]
-    print(ints)
     some_bytes = bytearray(ints)
     out_bin = bytes(some_bytes) 
-    print(out_bin)
-    print('-----')
     return out_bin
 
 def main():
